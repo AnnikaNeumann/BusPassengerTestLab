@@ -34,4 +34,10 @@ public class Bus {
         int index  = passengers.indexOf(person);
          passengers.remove(index);
         }
+
+        public void pickUp(BusStop busStop, Person person){
+        busStop.removeFromQueue(person);
+        passengers.add(person);
+
+        }
     }
